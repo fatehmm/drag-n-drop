@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/styles/css/main.css">
+    <script defer src="assets/js/main.js"></script>
+    <title>drag & drop</title>
+</head>
+<body>
+    <h1>DRAG  &  DROP </h1>
+    <section class="divs">
+        <div draggable="true" red="255" green="0" blue="0" ></div>
+        <div draggable="true" red="255" green="255" blue="0" ></div>
+        <div draggable="true" red="245" green="162" blue="7" ></div>
+        <div draggable="false" red="255" green="0" blue="0" class="dropped-zone"></div>
+    </section>
+
+    <main>
+        <section draggable="true" class="custom-div" red="255" green="255" blue="255"></section>
+        
+        <form action="">
+            <span><b>CUSTOM_COLOR</b></span>
+            <input type="text" name="red" id="red" placeholder="RED">
+            <input type="text" name="green" id="green" placeholder="GREEN">
+            <input type="text" name="blue" id="blue" placeholder="BLUE">
+            <button type="button" id="submit-button">APPLY!</button>
+        </form>
+        
+    </main>
+    <br>
+        <p>*Note: Since the custom circle is transparent at first, you have to apply a style, then drag it to the dropzone</p>
+</body>
+</html>
